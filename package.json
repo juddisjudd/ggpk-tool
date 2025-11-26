@@ -1,0 +1,43 @@
+{
+  "name": "poe2-ggpk-tool",
+  "version": "1.0.0",
+  "description": "Extract and parse assets from Path of Exile 2's Content.ggpk file",
+  "type": "module",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "keywords": [
+    "path-of-exile",
+    "poe2",
+    "ggpk",
+    "asset-extraction",
+    "data-mining"
+  ],
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "gui": "bun run src/index.ts gui",
+    "extract": "bun run src/index.ts bundle-extract",
+    "parse": "bun run src/index.ts parse-all-dat",
+    "test": "bun test",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "pako": "^2.1.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.6",
+    "@types/pako": "^2.0.4",
+    "prettier": "3.6.2",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}

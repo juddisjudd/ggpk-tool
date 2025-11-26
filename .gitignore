@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.bun/
+
+# Build outputs
+bin/
+dist/
+build/
+
+# Extracted content
+extracted/
+cache/
+parsed-data/
+*-converted/
+
+# Config (user-specific)
+config.json
+
+# Logs
+*.log
+npm-debug.log*
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+external/ooz/*
+external/texconv/*
+parsed/
+.playwright-mcp/
