@@ -2,6 +2,8 @@
 
 A TypeScript/Bun tool for extracting and parsing assets from Path of Exile 2's Content.ggpk file.
 
+https://github.com/user-attachments/assets/05ac2aa7-7f1b-4ca9-833a-c3f7069bd71d
+
 ## Features
 
 - Extract files from bundled GGPK (114GB+ archives)
