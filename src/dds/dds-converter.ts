@@ -17,12 +17,9 @@ export class DDSConverter {
    */
   parseDDSHeader(buffer: Buffer): DDSInfo {
     // DDS file structure:
-    // 0-3: Magic "DDS "
-    // 4-7: Size (124)
-    // 8-11: Flags
-    // 12-15: Height
-    // 16-19: Width
-    // ... more fields
+    // DDS Header offsets
+    // 0-3: Magic "DDS ", 4-7: Size (124), 8-11: Flags
+    // 12-15: Height, 16-19: Width, 28: MipmapCount
     
     const magic = buffer.toString('ascii', 0, 4);
     if (magic !== 'DDS ') {

@@ -250,7 +250,6 @@ export class DATParser {
 
       case 'foreignrow': {
         const rid = buffer.readBigInt64LE(offset);
-        // const unknown = buffer.readBigInt64LE(offset + 8);
         if (rid === NULL_ROW || rid === NULL_FOREIGN_ROW || rid === NULL_MARKER) {
           return { value: null, bytesRead: 16 };
         }

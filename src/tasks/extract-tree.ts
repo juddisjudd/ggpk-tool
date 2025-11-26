@@ -98,14 +98,4 @@ export async function extractTree(config: TreeExtractionConfig): Promise<void> {
   logger.success(`\nTotal extracted: ${extractedCount} files`);
   logger.info(`Output directory: ${join(config.outputDir, 'tree')}`);
   
-  // Copy to app if requested
-  if (config.copyToApp) {
-    logger.section('Copying to Main App');
-    const appDataDir = join(process.cwd(), '..', '..', 'src', 'data', 'tree');
-    const appAssetsDir = join(process.cwd(), '..', '..', 'src', 'assets', 'tree');
-    
-    // TODO: Implement copy logic
-    logger.info(`Would copy to: ${appDataDir}`);
-    logger.info(`Would copy to: ${appAssetsDir}`);
-  }
 }
