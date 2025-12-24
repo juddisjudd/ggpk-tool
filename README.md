@@ -1,3 +1,20 @@
+<div align="center">
+
+# ⚠️ DEPRECATED ⚠️
+
+**This repository is no longer maintained.**
+
+Please use the new replacement:  
+[**ggpk-explorer**](https://github.com/juddisjudd/ggpk-explorer)
+
+(This project has been superseded by a newer version with improved features and active maintenance.)
+
+</div>
+
+<hr>
+
+<!-- Original README content below -->
+
 # POE2 GGPK Tool
 
 A TypeScript/Bun tool for extracting and parsing assets from Path of Exile 2's Content.ggpk file.
